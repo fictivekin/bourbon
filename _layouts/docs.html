@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
-    <link rel="stylesheet" href="/bourbon/stylesheets/docs.css">
+    <link rel="stylesheet" href="{{ "/stylesheets/docs.css" | prepend: site.baseurl }}">
     <script>try{Typekit.load();}catch(e){}</script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/bourbon/js/docs.js"></script>
+    <script src="{{ "/js/docs.js" | prepend: site.baseurl }}"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -23,7 +23,7 @@
 
     {{ content }}
 
-    <script src="/bourbon/js/waypoints.min.js"></script>
-    <script src="/bourbon/js/ticker.js"></script>
+    <script src="{{ "/js/waypoints.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/ticker.js" | prepend: site.baseurl }}"></script>
   </body>
 </html>

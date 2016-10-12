@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
-    <link rel="stylesheet" href="/bourbon/stylesheets/home.css">
+    <link rel="stylesheet" href="{{ "/stylesheets/home.css" | prepend: site.baseurl }}">
     <script src="//use.typekit.net/icc0mhe.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     {% include segment.html %}
@@ -16,7 +16,7 @@
     {{ content }}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="/bourbon/js/vendor/jgestures.min.js"></script>
-    <script src="/bourbon/js/application.js"></script>
+    <script src="{{ "/js/vendor/jgestures.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/application.js" | prepend: site.baseurl }}"></script>
   </body>
 </html>
