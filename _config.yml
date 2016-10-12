@@ -2,6 +2,7 @@
 title: Bourbon
 description: "Bourbon is a lightweight Sass tool set that helps you write more effective stylesheets."
 baseurl: "/bourbon"
+githuburl: "https://github.com/fictivekin/bourbon"
 
 # Build settings
 exclude: [features/, gh-docs/, lib/, LICENSE.md, Rakefile, README.md]
